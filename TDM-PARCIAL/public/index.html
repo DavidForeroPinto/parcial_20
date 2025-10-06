@@ -1,0 +1,220 @@
+//HTML
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Curso corto: Diseño Web — Registro</title>
+  <meta name="description" content="Página de presentación y registro para un curso corto en línea." />
+
+  <!-- Tipografía (opcional, puedes cambiarla en CSS) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@700&display=swap"
+    rel="stylesheet">
+
+  <!-- Hoja de estilos (la crearás después) -->
+  <link rel="stylesheet" href="./css/styles.css" />
+
+  <!-- Favicon simple -->
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='70' x='10' font-size='70'%3E🎓%3C/text%3E%3C/svg%3E">
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ENCABEZADO -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="Inicio">
+        <span class="brand-mark" aria-hidden="true">◎</span>
+        <span class="brand-text">CursoCorto</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Principal">
+        <ul class="nav-list">
+          <li><a href="#presentacion">Presentación</a></li>
+          <li><a href="#temario">Temario</a></li>
+          <li><a href="#docente">Docente</a></li>
+          <li><a class="btn btn--small" href="#registro">Inscribirme</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO / PRESENTACIÓN -->
+  <main id="contenido">
+    <section id="presentacion" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1 class="hero-title">Diseño Web desde Cero (curso corto)</h1>
+          <p class="hero-desc">
+            Aprende los fundamentos del diseño web moderno: estructura HTML semántica, estilos
+            con CSS, componentes reutilizables y buenas prácticas de legibilidad y usabilidad.
+            Al finalizar, tendrás una landing funcional y lista para publicar.
+          </p>
+
+          <ul class="hero-highlights" aria-label="Características del curso">
+            <li>Duración: 8 horas (2 sesiones)</li>
+            <li>Modalidad: 100% online — en vivo</li>
+            <li>Nivel: Principiante / Intermedio</li>
+          </ul>
+
+          <div class="hero-cta">
+            <a class="btn" href="#registro">Registrarme ahora</a>
+            <a class="link" href="#temario">Ver temario completo</a>
+          </div>
+        </div>
+
+        <figure class="hero-media" aria-label="Ilustración de diseño web">
+          <img src="https://images.unsplash.com/photo-1529101091764-c3526daf38fe?q=80&w=1200&auto=format&fit=crop"
+            alt="Escritorio con laptop mostrando una interfaz web" loading="lazy" width="1200" height="800">
+          <figcaption class="sr-only">Escritorio con laptop e interfaz de diseño.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- TEMARIO / MÓDULOS -->
+    <section id="temario" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Temario del curso</h2>
+          <p>Contenido organizado en módulos cortos y prácticos.</p>
+        </header>
+
+        <ol class="modules" role="list">
+          <li class="module">
+            <h3>01 · Fundamentos y wireframe</h3>
+            <p>Estructura del sitio, objetivos del usuario, jerarquía visual y boceto
+              de la interfaz (wireframe) con foco en coherencia y legibilidad.</p>
+          </li>
+          <li class="module">
+            <h3>02 · HTML semántico</h3>
+            <p>Etiquetas, accesibilidad básica, estructura por secciones y mejores prácticas.</p>
+          </li>
+          <li class="module">
+            <h3>03 · CSS moderno</h3>
+            <p>Variables, grid/flex, sistema de espaciado, tipografías, color y estados <em>hover</em>.</p>
+          </li>
+          <li class="module">
+            <h3>04 · Interactividad con JavaScript</h3>
+            <p>Validación en cliente, micro-interacciones y feedback accesible.</p>
+          </li>
+          <li class="module">
+            <h3>05 · Entrega</h3>
+            <p>Empaquetado del proyecto, servidor Node y despliegue local.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PERFIL DEL DOCENTE -->
+    <section id="docente" class="section section--alt">
+      <div class="container teacher-grid">
+        <figure class="teacher-media">
+          <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=800&auto=format&fit=crop"
+            alt="Foto del docente del curso" loading="lazy" width="800" height="800">
+        </figure>
+
+        <div class="teacher-content">
+          <header class="section-header">
+            <h2>Tu docente</h2>
+          </header>
+          <p><strong>Ana López</strong> — Diseñadora UI/UX con 8+ años de experiencia en
+            productos digitales. Ha liderado equipos de diseño y acompaña procesos de
+            prototipado, pruebas de usabilidad y handoff a desarrollo.</p>
+
+          <ul class="badge-list" aria-label="Especialidades de la docente">
+            <li>Accesibilidad</li>
+            <li>Design Systems</li>
+            <li>Animaciones UI</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULARIO DE REGISTRO -->
+    <section id="registro" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Registro</h2>
+          <p>Completa el formulario para reservar tu cupo.</p>
+        </header>
+
+        <form class="form" novalidate aria-describedby="formHelp" aria-live="polite">
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="fullname">Nombre completo</label>
+              <input id="fullname" name="fullname" type="text" autocomplete="name" required
+                placeholder="Ej. Camila Pérez" />
+              <small class="field-hint">Como figura en tu documento.</small>
+            </div>
+
+            <div class="form-field">
+              <label for="email">Correo electrónico</label>
+              <input id="email" name="email" type="email" autocomplete="email" required placeholder="tu@correo.com" />
+            </div>
+
+            <div class="form-field">
+              <label for="phone">Teléfono (opcional)</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="Ej. 300 000 0000" />
+            </div>
+
+            <div class="form-field">
+              <label for="role">¿Cuál es tu perfil?</label>
+              <select id="role" name="role" required>
+                <option value="" selected disabled>Selecciona una opción…</option>
+                <option value="estudiante">Estudiante</option>
+                <option value="profesional">Profesional</option>
+                <option value="emprendedor">Emprendedor(a)</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+
+            <div class="form-field form-field--full">
+              <label for="message">¿Qué esperas aprender?</label>
+              <textarea id="message" name="message" rows="4"
+                placeholder="Cuéntanos brevemente tus objetivos…"></textarea>
+            </div>
+
+            <div class="form-field form-field--checkbox form-field--full checkwrap">
+              <input id="terms" name="terms" type="checkbox" required class="check-input" />
+              <label for="terms" class="checkbtn" role="button" aria-pressed="false">
+                <span class="check-icon" aria-hidden="true"></span>
+                Acepto la política de datos y términos del curso.
+              </label>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn" type="submit" id="submitBtn">Enviar inscripción</button>
+              <p id="formHelp" class="form-help">Te llegará confirmación al correo.</p>
+              <div id="formStatus" class="form-status" aria-live="polite"></div>
+            </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <p>© <span id="year"></span> David Forero CursoCorto. Todos los derechos reservados.</p>
+      <ul class="footer-links">
+        <li><a href="#presentacion">Inicio</a></li>
+        <li><a href="#temario">Temario</a></li>
+        <li><a href="#docente">Docente</a></li>
+        <li><a href="#registro">Registro</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Script (lo implementaremos luego) -->
+  <script src="./js/app.js" defer></script>
+
+  <!-- Accesibilidad: texto solo para lectores de pantalla -->
+  <span class="sr-only" aria-hidden="true"></span>
+</body>
+
+</html>
