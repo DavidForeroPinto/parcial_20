@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Toyota",
+    "model": "Corolla XLE",
+    "price": 12950,
+    "year": 2021,
+    "color": "Gris",
+    "description": "Sedán compacto, eficiente en combustible, ideal para ciudad y viajes.",
+    "imageUrl": "https://i.pinimg.com/1200x/17/a2/8c/17a28c3017f791e12e84879244fd5f5a.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Ford",
+    "model": "Mustang GT",
+    "price": 38900,
+    "year": 2019,
+    "color": "Rojo",
+    "description": "Deportivo V8 con gran potencia y acabado premium.",
+    "imageUrl": "https://i.pinimg.com/736x/ba/a7/45/baa745d69d7fc156a21ab3d7d19ac1b3.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Chevrolet",
+    "model": "Camaro SS",
+    "price": 45000,
+    "year": 2020,
+    "color": "Amarillo",
+    "description": "Muscle car clásico con motor V8 y diseño agresivo.",
+    "imageUrl": "https://i.pinimg.com/736x/ff/80/81/ff8081bf03d61b98e86a430b32b2f460.jpg"
+  },
+  {
+    "name": "kia",
+    "model": "cerato",
+    "price": 9000000,
+    "year": 2018,
+    "color": "blanco",
+    "imageUrl": "https://i.pinimg.com/1200x/69/f4/dd/69f4ddb3f2e21adf31e7694d8dbec6cb.jpg",
+    "description": "Lo más fresa del pedazo",
+    "id": 1756966386435
+  },
+  {
+    "name": "toyota",
+    "model": "lc 200",
+    "price": 27000000,
+    "year": 2020,
+    "color": "blanco",
+    "imageUrl": "https://autoseeks.com/wp-content/uploads/2022/07/2022-Toyota-Land-Cruiser-Exterior1.webp",
+    "description": "La mejor camioneta",
+    "id": 1757020204894
+  },
+  {
+    "name": "Ferrari",
+    "model": "f8 tributo",
+    "price": 200000000,
+    "year": 2022,
+    "color": "Blanco",
+    "imageUrl": "https://e1.pxfuel.com/desktop-wallpaper/990/151/desktop-wallpaper-ferrari-f8-tributo-white-2020-car-2020-ferrari-f8-tributo.jpg",
+    "description": "Un carro de lujo, V8 viturbo 750 caballos de fuerza.",
+    "id": 1757119403150
+  }
+]

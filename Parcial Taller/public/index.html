@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AutoDealer Pro</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-brand"><h2>🚗 AutoDealer Pro</h2></div>
+    <ul class="nav-menu">
+      <li><a href="#" id="navGestion" class="active">Gestión</a></li>
+      <li><a href="#" id="navCatalog">Catálogo</a></li>
+    </ul>
+  </nav>
+
+  <!-- Gestión -->
+  <section id="gestionSection" class="section active">
+    <main>
+      <h1>Gestión de Carros</h1>
+      <form id="itemForm">
+        <input type="text" id="name" placeholder="Nombre" required />
+        <input type="text" id="model" placeholder="Modelo" required />
+        <input type="number" id="price" placeholder="Precio" required />
+        <input type="number" id="year" placeholder="Año" required />
+        <input type="text" id="color" placeholder="Color" required />
+        <input type="url" id="imageUrl" placeholder="URL de la imagen" />
+        <textarea id="description" placeholder="Descripción"></textarea>
+        <button class="btn-action btn-edit" type="submit" id="submitBtn">Agregar</button>
+      </form>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Modelo</th>
+            <th>Precio</th>
+            <th>Año</th>
+            <th>Color</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="itemsTable"></tbody>
+      </table>
+    </main>
+  </section>
+
+  <!-- Catálogo -->
+  <section id="catalogSection" class="section">
+    <main>
+      <h1>Catálogo</h1>
+      <div id="catalogContainer" class="catalog-grid"></div>
+    </main>
+  </section>
+
+  <div id="catalogContainer"></div>
+  
+<!-- Modal -->
+<div id="itemModal" class="modal">
+  <div class="modal-content">
+    <button id="closeModal">&times;</button>
+    <h2 id="modalTitle"></h2>
+    <img id="modalImage" src="" alt="" />
+    <p><strong>Modelo:</strong> <span id="d_model"></span></p>
+    <p><strong>Precio:</strong> <span id="d_price"></span></p>
+    <p><strong>Año:</strong> <span id="d_year"></span></p>
+    <p><strong>Color:</strong> <span id="d_color"></span></p>
+    <p><strong>Descripción:</strong> <span id="d_description"></span></p>
+  </div>
+</div>
+
+  <!-- Scripts -->
+  <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/catalog.js"></script>
+</body>
+</html>
